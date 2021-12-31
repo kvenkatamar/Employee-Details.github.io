@@ -51,10 +51,11 @@ li {
 span {
     font-weight: lighter;
 }
-.error1,.error2, .minAge{
+.error-1, .error-2, .error-3_1, .error-3_2, .error-3_3, .error-4, .error-5_1, .error-5_2{
     font-size: small;
     font-weight: lighter;
     color: red;
+    margin-left: 177px;
     display: none;
 }
 #submitbtn {

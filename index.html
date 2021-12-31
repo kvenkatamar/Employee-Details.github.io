@@ -19,41 +19,56 @@
                     <div class="label">
                         Enter Employee Name:
                     </div>
-                    <input type="text" id="name">
+                    <input type="text" id="name" onkeypress="return validation1(event)">
+                    <div class="error-1">
+                        ! Enter Employee name
+                    </div>
                 </li>
                 <li>
                     <div class="label">
                         Enter Gender:
                     </div>
-                    <input type="text" placeholder="male/female" id="gender">
+                    <input type="text" placeholder="male/female" id="gender" onkeypress="return validation2(event)">
+                    <div class="error-2">
+                        ! Enter Gender
+                    </div>
                     <!--<input type="radio" name="gender" id="mgender">male
                     <input type="radio" name="gender" id="fgender">female-->
                 </li>
                 <li>
                     <div class="label">
                         Enter Age:
-                    </div> 
-                    <input type="text" id="age" placeholder="in years" onkeypress="return validateData1(event, '.error1')">
-                    <div class="error1">
-                        !Please enter only the numbers
                     </div>
-                    <div class="minAge">
-                        !Age must be greater than 18years
+                    <input type="text" id="age" placeholder="in years" onkeypress="return validation3(event)">
+                    <div class="error-3_1">
+                        ! Enter Age
+                    </div>
+                    <div class="error-3_2">
+                        ! Please enter only the numbers
+                    </div>
+                    <div class="error-3_3">
+                        ! Age must be greater than 18years
                     </div>
                 </li>
                 <li>
                     <div class="label">
                         Enter Department:
                     </div> 
-                    <input type="text" id="dep" onkeypress="return validateData2(event)">
+                    <input type="text" id="dep" onkeypress="return validation4(event)">
+                    <div class="error-4">
+                        ! Enter Department
+                    </div>
                 </li>
                 <li>
                     <div class="label">
                         Enter Base Salary:
                     </div> 
-                    <input type="text" id="baseSalary" onkeypress="return validateData1(event, '.error2')">
-                    <div class="error2">
-                        !Please enter only the numbers
+                    <input type="text" id="baseSalary" onkeypress="return validation5(event)">
+                    <div class="error-5_1">
+                        ! Enter Salary
+                    </div>
+                    <div class="error-5_2">
+                        ! Please enter only the numbers
                     </div>
                 </li>
                 <li class="submit">
