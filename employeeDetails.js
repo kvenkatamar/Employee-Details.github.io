@@ -1,4 +1,4 @@
-var employeeDetails = {};
+var employeeDetails = {};   /* JSON Object */
 function userInput() {
     employeeDetails.name = document.querySelector("#name").value;
     employeeDetails.gender = document.querySelector("#gender").value;

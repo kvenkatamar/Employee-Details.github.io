@@ -48,6 +48,7 @@ var validation3 = (event) => {
 }
 var validation4 = (event) => {
     document.querySelector(".error-4").style.display = 'none';
+    document.querySelector(".error-3_2").style.display = 'none';
     if(document.querySelector("#age").value == ''){
         document.querySelector(".error-3_1").style.display = 'block';
         return false;
