@@ -17,7 +17,7 @@ var validation2 = (event) => {
         return true;
     }
 }*/
-var validation1 = (event) => {
+/*var validation1 = (event) => {
     document.querySelector(".error-1").style.display = 'none';
     return true;
 }
@@ -63,7 +63,7 @@ var validation4 = (event) => {
     /*else if(document.querySelector("#age").value == ''){
         document.querySelector(".error-3_3").style.display = 'block';
         return false;
-    }*/
+    }
 }
 var validation5 = (event) => {
     document.querySelector(".error-5_1").style.display = 'none';
@@ -73,4 +73,39 @@ var validation5 = (event) => {
         return false;
     }
     return true;
+}*/
+/*------------------------------------------------------------------------------*/
+var validationCheck = (event) => {
+    document.querySelector(".error-1").style.display = 'none';
+    document.querySelector(".error-2").style.display = 'none';
+    document.querySelector(".error-3_1").style.display = 'none';
+    document.querySelector(".error-3_3").style.display = 'none';
+    document.querySelector(".error-4").style.display = 'none';
+    EmployeeName();
+    gender();
+    age();
+    dep();
+}
+var EmployeeName = () =>{
+    if(document.querySelector("#name").value == ''){
+        document.querySelector(".error-1").style.display = 'block';
+    }
+}
+var gender = () => {
+    if(document.querySelector("#gender").value == ''){
+        document.querySelector(".error-2").style.display = 'block';
+    }
+}
+var age = () => {
+    if(document.querySelector("#age").value == ''){
+        document.querySelector(".error-3_1").style.display = 'block';
+    }
+    else if(document.querySelector("#age").value <= 18){
+        document.querySelector(".error-3_3").style.display = 'block';
+    }
+}
+var dep = () => {
+    if(document.querySelector("#dep").value == ''){
+        document.querySelector(".error-4").style.display = 'block';
+    }
 }
