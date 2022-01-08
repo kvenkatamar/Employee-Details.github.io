@@ -1,6 +1,6 @@
 .header {
     margin: 5px auto;
-    width: 200px;
+    width: 16.7%;
     text-align: center;
     border: 2px solid;
     padding: 2px;
@@ -8,7 +8,7 @@
 }
 .userInput {
     border: 2px solid;
-    width: 500px;
+    width: 36%;
     margin: 10px auto;
     padding: 5px;
 }
