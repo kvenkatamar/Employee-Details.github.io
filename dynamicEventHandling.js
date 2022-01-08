@@ -17,6 +17,9 @@ var validation2 = (event) => {
         return true;
     }
 }*/
+
+/*------------------------------- ONKEYPRESS ---------------------------------*/
+
 /*var validation1 = (event) => {
     document.querySelector(".error-1").style.display = 'none';
     return true;
@@ -74,8 +77,10 @@ var validation5 = (event) => {
     }
     return true;
 }*/
-/*------------------------------------------------------------------------------*/
-var validationCheck = (event) => {
+
+/*------------------------------"ONCLICK"------------------------------------------------*/
+
+var validationCheck = () => {
     document.querySelector(".error-1").style.display = 'none';
     document.querySelector(".error-2").style.display = 'none';
     document.querySelector(".error-3_1").style.display = 'none';
@@ -85,15 +90,25 @@ var validationCheck = (event) => {
     gender();
     age();
     dep();
+    salary();
+    if(document.querySelector("#name").value != '' && document.querySelector("#gender").value != '' && document.querySelector("#age").value != '' && document.querySelector("#age").value > 18 && document.querySelector("#dep").value != '' && document.querySelector("#baseSalary").value != ''){
+        userInput();
+    }
 }
 var EmployeeName = () =>{
     if(document.querySelector("#name").value == ''){
         document.querySelector(".error-1").style.display = 'block';
     }
+    else{
+        document.querySelector(".error-1").style.display = 'none';
+    }
 }
 var gender = () => {
     if(document.querySelector("#gender").value == ''){
         document.querySelector(".error-2").style.display = 'block';
+    }
+    else{        
+        document.querySelector(".error-2").style.display = 'none';
     }
 }
 var age = () => {
@@ -103,9 +118,24 @@ var age = () => {
     else if(document.querySelector("#age").value <= 18){
         document.querySelector(".error-3_3").style.display = 'block';
     }
+    else{
+        document.querySelector(".error-3_1").style.display = 'none';
+        document.querySelector(".error-3_3").style.display = 'none';
+    }
 }
 var dep = () => {
     if(document.querySelector("#dep").value == ''){
         document.querySelector(".error-4").style.display = 'block';
+    }
+    else{
+        document.querySelector(".error-4").style.display = 'none';
+    }
+}
+var salary = () => {
+    if(document.querySelector("#baseSalary").value == ''){
+        document.querySelector(".error-5_1").style.display = 'block';
+    }
+    else{
+        document.querySelector(".error-5_1").style.display = 'none';
     }
 }
